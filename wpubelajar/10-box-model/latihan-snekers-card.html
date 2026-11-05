@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Sneakers Card</title>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 40px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      width: 330px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: hidden;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-category {
+        font-size: 12px;
+        color: #06c;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    .product-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1a1a1a;
+        margin-bottom: 12px;
+    }
+
+    .product-description {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #eee;
+        text-align: justify;
+        margin: 15px;
+        padding: 10px;
+
+
+    }
+
+    .price-section {
+        margin-bottom: 16px;
+    }
+
+    .price-section .price .original-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e53935;
+        margin-right: 8px;
+    }
+
+    .size-option-wrapper {
+        border: none;
+    }
+
+
+    .size-label-text {
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .size-options {
+        margin-bottom: 25px;
+    }
+
+    .size-options input[type="radio"] {
+        display: none;
+    }
+
+    .size-options label {
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 8px;
+        border: 2px solid #eee;
+        font-weight: bold;
+        color: #555;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s ease;
+    }
+
+    .size-options input[type="radio"]:checked + label {
+        background-color: #000;
+        color: #fff;
+        border-color: #eaeaea;
+    }
+
+    .buy-button {
+        width: 100%;
+        padding: 16px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .buy-button:hover {
+        background-color: #333;
+    }
+
+    </style> 
+
+</head>
+<body>
+    <article class="product-card">
+        <figure class="product-image">
+         <img src="asset/image/Converse.jpg" alt="Converse" >
+        </figure>
+    
+
+    <p class="product-category">Converse Sneakers</p>
+    <h3 class="product-title">Converse Chuck Taylor</h3>
+
+    <p class="product-description">Converse Chuck Taylor All Star adalah sepatu kets legendaris yang memadukan desain klasik minimalis dengan kenyamanan optimal sepanjang hari.</p>
+
+    <div class="price-section">
+        <span class="price">IDR 1,499,000</span>
+        <del class="original-price">IDR 1,899,000</del>
+    </div>
+
+    <form action="">
+    <fieldset class="size-option-wrapper">
+        <legend class="size-label-text">Pilih Ukuran (US):</legend>
+        <div class="size-options">
+            <input type="radio" name="size" id="s8" value="8">
+            <label for="s8">8</label>
+
+            <input type="radio" name="size" id="s9" value="9">
+            <label for="s9">9</label>
+
+            <input type="radio" name="size" id="s10" value="10">
+            <label for="s10">10</label>
+
+            <input type="radio" name="size" id="s11" value="11">
+            <label for="s11">11</label>
+
+            <input type="radio" name="size" id="s12" value="12">
+            <label for="s12">12</label>
+            
+        </div>
+    </fieldset>
+    
+    <button class="buy-button" type="submit">Tambah ke Keranjang</button>
+
+    </form>
+
+   </article>
+
+
+
+</body>
+</html>
